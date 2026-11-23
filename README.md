@@ -2,6 +2,12 @@
 
 Two offline, read-only portfolio showcase copies inspired by accounting systems Ayub built for different workflows:
 
+## Live demos
+
+- [Demo hub](https://ayubfarah61.github.io/accounting-system-demos/)
+- [Trading & manufacturing](https://ayubfarah61.github.io/accounting-system-demos/trading/)
+- [Accounting & operations](https://ayubfarah61.github.io/accounting-system-demos/operations/)
+
 - **Trading & Manufacturing** — bookkeeping, stock, production, settlements, and reporting.
 - **Accounting & Operations** — general accounting, gold operations, payroll, equipment, rentals, and reporting.
 
