@@ -1,0 +1,15 @@
+.env
+.env.*
+.data/
+*.sqlite
+*.sqlite3
+*.db
+*.sql
+*.csv
+*.xlsx
+*.xlsm
+*.pdf
+*.zip
+node_modules/
+wrangler.*
+!.gitignore

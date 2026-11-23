@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Offline, fictional-data demonstrations of two accounting systems built by Ayub Farah.">
+  <title>Accounting Systems | Ayub Farah</title>
+  <style>
+    :root { color-scheme: light; --ink:#172b32; --muted:#617478; --paper:#f4f2eb; --line:#d9ded6; --green:#116a58; --gold:#b57931; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--paper); font:16px/1.55 "Trebuchet MS", "Segoe UI", sans-serif; }
+    a { color:inherit; }
+    .wrap { max-width:1120px; padding:28px 28px 72px; margin:auto; }
+    .top { display:flex; justify-content:space-between; align-items:center; padding:12px 0 46px; border-bottom:1px solid var(--line); font-size:13px; letter-spacing:.09em; text-transform:uppercase; }
+    .brand { font-weight:800; letter-spacing:.12em; }
+    .top a { text-decoration:none; color:var(--muted); }
+    .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:5vw; align-items:end; padding:74px 0 66px; }
+    .kicker { color:var(--green); text-transform:uppercase; letter-spacing:.18em; font-size:12px; font-weight:800; }
+    h1 { font:500 clamp(44px,7vw,82px)/.98 Georgia,serif; letter-spacing:-.045em; margin:18px 0 20px; max-width:730px; }
+    .hero p { color:var(--muted); font-size:18px; max-width:530px; margin:0; }
+    .seal { justify-self:end; max-width:315px; border:1px solid #b6c7bb; border-radius:4px; padding:22px 24px; background:#e7eee6; color:#32514b; font-size:14px; }
+    .seal strong { display:block; color:#145e4f; margin-bottom:8px; letter-spacing:.08em; text-transform:uppercase; font-size:12px; }
+    .projects { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+    .card { background:#fffefa; border:1px solid var(--line); border-radius:5px; overflow:hidden; display:flex; flex-direction:column; min-height:430px; box-shadow:0 14px 36px #243c3210; }
+    .art { min-height:205px; padding:22px; display:flex; align-items:end; position:relative; overflow:hidden; color:#f6f5ef; }
+    .art:before,.art:after { content:""; position:absolute; border:1px solid #ffffff36; border-radius:50%; width:290px; height:290px; right:-58px; top:-150px; }
+    .art:after { width:180px; height:180px; right:48px; top:-82px; }
+    .art.trading { background:linear-gradient(145deg,#132e31,#186855 74%,#87a77b); }
+    .art.operations { background:linear-gradient(145deg,#252c31,#715735 74%,#bd995a); }
+    .art span { position:relative; z-index:1; font:500 39px/1 Georgia,serif; letter-spacing:-.03em; }
+    .cardbody { padding:24px 26px 22px; display:flex; flex-direction:column; flex:1; }
+    .cardbody h2 { margin:0 0 9px; font:500 29px/1.1 Georgia,serif; letter-spacing:-.02em; }
+    .cardbody p { margin:0 0 18px; color:var(--muted); }
+    .tags { display:flex; flex-wrap:wrap; gap:7px; margin:0 0 22px; }
+    .tag { font-size:12px; color:#3b5755; border:1px solid #cbd8cf; border-radius:99px; padding:5px 10px; background:#f7f8f3; }
+    .link { align-self:flex-start; margin-top:auto; text-decoration:none; color:#fff; background:#175d50; border-radius:3px; padding:11px 16px; font-weight:700; }
+    .operations-link { background:#69512f; }
+    footer { display:flex; justify-content:space-between; gap:20px; border-top:1px solid var(--line); margin-top:42px; padding-top:20px; color:var(--muted); font-size:13px; }
+    footer a { color:#245e55; }
+    @media (max-width:700px) { .wrap{padding:18px 18px 48px}.hero{grid-template-columns:1fr;padding:52px 0 42px}.seal{justify-self:start}.projects{grid-template-columns:1fr}.top{padding-bottom:28px}.card{min-height:0}footer{flex-direction:column} }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="top"><div class="brand">Ayub Farah · Project demos</div><a href="https://www.linkedin.com/in/ayub-farah-a149b227a/" target="_blank" rel="noopener">LinkedIn ↗</a></header>
+    <section class="hero">
+      <div><div class="kicker">Selected accounting systems</div><h1>Built for the work behind the numbers.</h1><p>Two independent, offline demo copies showing accounting workflows, operational records, and management reporting.</p></div>
+      <aside class="seal"><strong>Privacy-first demo</strong>Fictional sample records only. No live connections, real company data, login, or write access.</aside>
+    </section>
+    <section class="projects" aria-label="Accounting system demos">
+      <article class="card"><div class="art trading"><span>ABC Co Ltd</span></div><div class="cardbody"><h2>Trading &amp; manufacturing</h2><p>Bookkeeping, stock movement, production costing, settlements, and financial reports.</p><div class="tags"><span class="tag">Bookkeeping</span><span class="tag">Inventory</span><span class="tag">Production</span><span class="tag">Reporting</span></div><a class="link" href="trading/index.html">Open trading demo <span aria-hidden="true">→</span></a></div></article>
+      <article class="card"><div class="art operations"><span>ABC Co Ltd</span></div><div class="cardbody"><h2>Accounting &amp; operations</h2><p>General accounting alongside gold operations, payroll, equipment, rentals, and reporting.</p><div class="tags"><span class="tag">General ledger</span><span class="tag">Gold operations</span><span class="tag">Payroll</span><span class="tag">Assets</span></div><a class="link operations-link" href="operations/index.html">Open operations demo <span aria-hidden="true">→</span></a></div></article>
+    </section>
+    <footer><span>Portfolio demonstration only · All figures and names are invented.</span><a href="https://ayubfarah.dpdns.org/">Main portfolio ↗</a></footer>
+  </main>
+</body>
+</html>
